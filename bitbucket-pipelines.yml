@@ -8,6 +8,17 @@ pipelines:
           - bundler
         script:
           - bundle install --path vendor/bundle
+          - bundle exec jekyll build
+          - mkdir dist
+          - zip -r dist/package-${BITBUCKET_BUILD_NUMBER}.tar.gz public
+        artifacts:
+          - dist/**
+    - step:
+        name: Deploy to Web
+        image: alpine
+        deployment: production
+        trigger: manual
+        script:
           - apk update && apk add openssh rsync
           - rsync -a  -e "ssh -o StrictHostKeyChecking=no" --delete dist/package-${BITBUCKET_BUILD_NUMBER}.zip bitbucket@my-host:/var/www/stranka-${BITBUCKET_BUILD_NUMBER}.zip
           - ssh -o StrictHostKeyChecking=no my-user@my-host "rm -r /var/www/html"
