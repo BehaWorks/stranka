@@ -7,6 +7,7 @@ pipelines:
         caches:
           - bundler
         script:
+          - gem update --system
           - bundle update --bundler
           - bundle install --path vendor/bundle
           - bundle exec jekyll build
