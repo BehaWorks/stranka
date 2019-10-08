@@ -1,0 +1,19 @@
+image: ruby:2.5
+
+pipelines:
+  default:
+    - step:
+        name: Generate the blog with Jekyll
+        caches:
+          - bundler
+        script:
+          - bundle install --path vendor/bundle
+…        script:
+          - apk update && apk add openssh rsync
+          - rsync -a  -e "ssh -o StrictHostKeyChecking=no" --delete dist/package-${BITBUCKET_BUILD_NUMBER}.zip bitbucket@my-host:/var/www/stranka-${BITBUCKET_BUILD_NUMBER}.zip
+          - ssh -o StrictHostKeyChecking=no my-user@my-host "rm -r /var/www/html"
+          - ssh -o StrictHostKeyChecking=no my-user@my-host"unzip stranka-${BITBUCKET_BUILD_NUMBER}.zip '/var/www/html'"
+definitions:
+  caches:
+    bundler: vendor/bundle
+
