@@ -12,7 +12,7 @@ pipelines:
           - bundle install --path vendor/bundle
           - bundle exec jekyll build
           - mkdir dist
-          - zip -r dist/package-${BITBUCKET_BUILD_NUMBER}.tar.gz public
+          - tar -czvf dist/package-${BITBUCKET_BUILD_NUMBER}.tar.gz -C public .
         artifacts:
           - dist/**
     - step:
@@ -21,10 +21,11 @@ pipelines:
         deployment: production
         trigger: manual
         script:
+          - tar -xf dist/package-${BITBUCKET_BUILD_NUMBER}.tar.gz -C upload
           - apk update && apk add openssh rsync
-          - rsync -a  -e "ssh -o StrictHostKeyChecking=no" --delete dist/package-${BITBUCKET_BUILD_NUMBER}.zip bitbucket@my-host:/var/www/stranka-${BITBUCKET_BUILD_NUMBER}.zip
-          - ssh -o StrictHostKeyChecking=no my-user@my-host "rm -r /var/www/html"
-          - ssh -o StrictHostKeyChecking=no my-user@my-host"unzip stranka-${BITBUCKET_BUILD_NUMBER}.zip '/var/www/html'"
+          - rsync -a  -e "ssh -o StrictHostKeyChecking=no" --delete upload/ bitbucket@team12-19.studenti.fiit.stuba.sk:/var/www/html-${BITBUCKET_BUILD_NUMBER}
+          - ssh -o StrictHostKeyChecking=no bitbucket@team12-19.studenti.fiit.stuba.sk "rm -r /var/www/html"
+          - ssh -o StrictHostKeyChecking=no bitbucket@team12-19.studenti.fiit.stuba.sk "mv '/var/www/html-${BITBUCKET_BUILD_NUMBER}' '/var/www/html'"
 definitions:
   caches:
     bundler: vendor/bundle
