@@ -21,6 +21,7 @@ pipelines:
         deployment: production
         trigger: manual
         script:
+          - mkdir upload
           - tar -xf dist/package-${BITBUCKET_BUILD_NUMBER}.tar.gz -C upload
           - apk update && apk add openssh rsync
           - rsync -a  -e "ssh -o StrictHostKeyChecking=no" --delete upload/ bitbucket@team12-19.studenti.fiit.stuba.sk:/var/www/html-${BITBUCKET_BUILD_NUMBER}
