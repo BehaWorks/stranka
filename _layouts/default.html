@@ -8,14 +8,16 @@
 		{% seo %}
 		{% feed_meta %}
 
-		<link href="css/screen.css" rel="stylesheet">
+        <link href="{{ site.baseurl }}/css/screen.css" rel="stylesheet">
 		<link rel="icon" type="favicon.png">
 	</head>
 	<body>
 		<header>
 			<div class="container">
-				<div class="company-name"><a href="{{ site.baseurl }}/"><img alt="Hydra Logo" height="33"
-																			 src="images/logo.svg" width="95"/></a>
+                <div class="company-name"><a href="{{ site.baseurl }}/{{ site.baseurl }}/"><img alt="Hydra Logo"
+                                                                                                height="33"
+                                                                                                src="{{ site.baseurl }}/images/logo.svg"
+                                                                                                width="95"/></a>
 				</div>
 				{% include navigation.html %}
 			</div>

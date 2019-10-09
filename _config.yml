@@ -2,8 +2,8 @@
 # Site
 
 title: Hydra Template
-url: "https://proud-alligator.cloudvent.net"
-baseurl:
+url: "http://labss2.fiit.stuba.sk"
+baseurl: "/TeamProject/2019/team12"
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
