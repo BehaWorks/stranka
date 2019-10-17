@@ -1,20 +1,20 @@
-- name: Blog
+- name: Dokumenty
   link: /blog/
   new_window: false
   highlight: false
-- name: About
+- name: O nás
   link: /about/
   new_window: false
   highlight: false
-- name: Contact
+- name: Kontakt
   link: /contact/
   new_window: false
   highlight: false
-- name: Login
+- name: O projekte
   link: /
-  new_window: true
+  new_window: false
   highlight: false
-- name: Sign Up
+- name: Aktuality
   link: /
-  new_window: true
-  highlight: true
+  new_window: false
+  highlight: false
