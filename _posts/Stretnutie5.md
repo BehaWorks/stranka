@@ -1,4 +1,4 @@
----
+---2016-08-02-sales-effectiveness
 date: 2016-08-02
 title: Sales effectiveness
 categories:
