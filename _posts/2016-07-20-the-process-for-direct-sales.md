@@ -10,7 +10,7 @@ author_staff_member: anna
 
 - Diskusia
 
-     -  Manažmente projektu 
+     - Manažmente projektu 
      - Tímovej identite 
      - Webovej stránke 
      - Názve a logu tímu 

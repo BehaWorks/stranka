@@ -10,5 +10,7 @@ author_staff_member: james
 - Finalizácia webovej stránky
 - Diskusia o formáte vstupných dát 
 - Aktualizácia Jiry
-- ScrumPoker
+- Planning Poker
 - Individuálna práca na pridelených úlohách
+
+[Report šprintu]({{ site.baseurl }}/reports/Stupavar.html)

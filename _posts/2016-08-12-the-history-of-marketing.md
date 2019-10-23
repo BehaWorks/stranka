@@ -10,4 +10,4 @@ author_staff_member: robin
 - Vytvorenie a naplnenie backolgu
 - Spustenie 1. šprintu
 - Pridelovanie táskov
-- ScrumPoker
+- Planning Poker
