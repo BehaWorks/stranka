@@ -1,6 +1,7 @@
 ---
-title:
+date: 2019-MM-DD
+title: Stretnutie č. #
 categories:
-author_staff_member:
-date:
+  - Sprint ???????
+author_staff_member: Adriana
 ---

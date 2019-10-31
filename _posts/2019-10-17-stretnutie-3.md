@@ -3,7 +3,7 @@ date: 2019-10-17
 title: Stretnutie č. 3
 categories:
   - Sprint Stupavar
-author_staff_member: james
+author_staff_member: Adriana
 ---
 - Zhodnotenie už vykonanej práce v šprinte
 
@@ -13,4 +13,4 @@ author_staff_member: james
 - Planning Poker
 - Individuálna práca na pridelených úlohách
 
-[Report šprintu]({{ site.baseurl }}/reports/Stupavar.html)
+[Report šprintu]({{ site.baseurl }}/reports/Stretnutie3.html)
