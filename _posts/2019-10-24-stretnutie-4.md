@@ -3,7 +3,7 @@ date: 2019-10-24
 title: Stretnutie č. 4
 categories:
   - Sprint Plzensky Prazdroj
-author_staff_member: betty
+author_staff_member: Adriana
 ---
 
 - Ukončenie šprintu (Predvedenie userstories - akceptované, uzavretie v jire)
