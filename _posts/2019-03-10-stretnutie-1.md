@@ -7,9 +7,7 @@ author_staff_member: Adriana
 ---
 
 - Základné predstavenie témy ("Virtuálna identita")
-
 - Diskusia
-
      - Manažmente projektu 
      - Tímovej identite 
      - Webovej stránke 

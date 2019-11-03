@@ -6,11 +6,10 @@ categories:
 author_staff_member: Adriana
 ---
 - Zhodnotenie už vykonanej práce v šprinte
-
 - Finalizácia webovej stránky
 - Diskusia o formáte vstupných dát 
 - Aktualizácia Jiry
 - Planning Poker
 - Individuálna práca na pridelených úlohách
 
-[Report šprintu]({{ site.baseurl }}/reports/Stretnutie3.html)
+[Report 3]({{ site.baseurl }}/reports/Stretnutie3.html)

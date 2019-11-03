@@ -6,7 +6,6 @@ categories:
 author_staff_member: Adriana
 ---
 - Voľba nástroja pre manažment tímu (Jira)
-
 - Vytvorenie a naplnenie backolgu
 - Spustenie 1. šprintu
 - Pridelovanie táskov

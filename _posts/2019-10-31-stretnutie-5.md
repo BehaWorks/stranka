@@ -6,4 +6,10 @@ categories:
 author_staff_member: Adriana
 ---
 
-Som tak prazdny, zapln ma textom :)
+- Stand up na začiatku stretnutí
+- Webová stránka - verziovanie, finalizácia sekcie dokumenty
+- Vytvorenie šablóny pre reportovanie stretnutí
+- Dokumentovanie - loggera a scrum metodiky
+- Diskusia a naštudovanie si problematiky k vizualizácii dát
+
+[Report 5]({{ site.baseurl }}/reports/Stretnutie5.html)
