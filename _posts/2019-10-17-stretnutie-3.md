@@ -5,6 +5,16 @@ categories:
   - Sprint Stupavar
 author_staff_member: Adriana
 ---
+- Stretnutia sa zúčastnili:
+  - Ing. Kamil Burda
+  - Bc. Adriana Ághová
+  - Bc. Martin Civáň
+  - Bc. Zuzana Cukerová
+  - Bc. Matúš Kováč
+  - Bc. Matúš Pilňan
+  - Bc. Andrej Schmidt
+  - Bc. Viliam Villár
+  
 - Zhodnotenie už vykonanej práce v šprinte
 - Finalizácia webovej stránky
 - Diskusia o formáte vstupných dát 
