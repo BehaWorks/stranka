@@ -5,6 +5,15 @@ categories:
   - Sprint Plzensky Prazdroj
 author_staff_member: Adriana
 ---
+- Stretnutia sa zúčastnili:
+  - Ing. Kamil Burda
+  - Bc. Adriana Ághová
+  - Bc. Martin Civáň
+  - Bc. Zuzana Cukerová
+  - Bc. Matúš Kováč
+  - Bc. Matúš Pilňan
+  - Bc. Andrej Schmidt
+  - Bc. Viliam Villár
 
 - Stand up na začiatku stretnutí
 - Webová stránka - verziovanie, finalizácia sekcie dokumenty
