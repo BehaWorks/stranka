@@ -21,6 +21,7 @@ jobs:
           bundle exec jekyll build
           mkdir dist
           tar -czvf dist/package-${{ github.sha }}.tar.gz -C _site .
+          ls .
       - name: Deploy to web        
         run: |
           mkdir upload
