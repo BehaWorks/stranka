@@ -18,3 +18,12 @@ jobs:
           bundle exec jekyll build
           mkdir dist
           tar -czvf dist/package-${{ github.sha }}.tar.gz -C _site .
+      - name: Deploy to web
+        run: |
+          mkdir upload
+          tar -xf dist/package-${{ github.sha }}.tar.gz -C upload
+          apk update && apk add openssh rsync
+          rsync -a  -e "ssh -o StrictHostKeyChecking=no" --delete upload/ bitbucket@team12-19.studenti.fiit.stuba.sk:/var/www/html-${{ github.sha }}
+          ssh -o StrictHostKeyChecking=no bitbucket@team12-19.studenti.fiit.stuba.sk "rm -r /var/www/html"
+          ssh -o StrictHostKeyChecking=no bitbucket@team12-19.studenti.fiit.stuba.sk "mv '/var/www/html-${{ github.sha }}' '/var/www/html'"
+
