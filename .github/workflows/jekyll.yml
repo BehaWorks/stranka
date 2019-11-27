@@ -1,16 +1,14 @@
 name: Jekyll site CI
 
 on: [push]
-
 jobs:
   build:
-
+    name: Build website
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v1
-    - name: Build the site in the jekyll/builder container
-      run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+    - name: Checkout repository
+      uses: actions/checkout@v1
+      with:
+        ref: master
+    - name: Run Jekyll
+      uses: docker://faph/action-jekyll:1.5
