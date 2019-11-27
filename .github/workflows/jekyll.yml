@@ -11,6 +11,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v1
       - name: Build site
+        run: |
           gem update --system
           gem install bundler
           bundle install --path vendor/bundle
