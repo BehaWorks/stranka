@@ -11,9 +11,10 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build the site in the jekyll/builder container
       run: |
-        gem update --system
-        gem install bundler
-        bundle install --path vendor/bundle
-        bundle exec jekyll build
-        mkdir dist
-        tar -czvf dist/package-${BITBUCKET_BUILD_NUMBER}.tar.gz -C _site .
+        docker run ruby:latest -c "\
+        gem update --system &&\
+        gem install bundler &&\
+        bundle install --path vendor/bundle &&\
+        bundle exec jekyll build &&\
+        mkdir dist &&\
+        tar -czvf dist/package-${BITBUCKET_BUILD_NUMBER}.tar.gz -C _site ."
