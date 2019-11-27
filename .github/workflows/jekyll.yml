@@ -5,10 +5,15 @@ jobs:
   build:
     name: Build website
     runs-on: ubuntu-latest
+    container:
+      image: ruby:latest
     steps:
-    - name: GHA Jekyll Build
-      uses: gha-utilities/jekyll-build@v0.0.1
-      with:
-        # Relative path that source files for Jekyll to build exsist
-        # Path where compiled site files should be saved to
-        destination: /site
+      - name: Checkout repo
+        uses: actions/checkout@v1
+      - name: Build site
+          gem update --system
+          gem install bundler
+          bundle install --path vendor/bundle
+          bundle exec jekyll build
+          mkdir dist
+          tar -czvf dist/package-${{ github.sha }}.tar.gz -C _site .
