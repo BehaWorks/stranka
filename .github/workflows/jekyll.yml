@@ -8,8 +8,8 @@ jobs:
     container:
       image: ruby:latest
       volumes: 
-        ${{ github.workspace }}:/srv/jekyll
-        ${{ github.workspace }}/_site:/srv/jekyll/_site
+        - ${{ github.workspace }}:/srv/jekyll
+        - ${{ github.workspace }}/_site:/srv/jekyll/_site
     steps:
       - name: Checkout repo
         uses: actions/checkout@v1
@@ -21,13 +21,6 @@ jobs:
           bundle exec jekyll build
           mkdir dist
           tar -czvf dist/package-${{ github.sha }}.tar.gz -C _site .
-      
-  deploy:
-    name: Deploy to web
-    runs-on: [ubuntu-latest]
-    container:
-      image: alpine
-    steps:
       - name: Deploy to web        
         run: |
           mkdir upload
