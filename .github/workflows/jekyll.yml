@@ -6,9 +6,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    container:
+      image: docker://ruby:latest
     steps:
-    - uses: docker://ruby:latest
     - name: Build the site
       run: |
         gem update --system
