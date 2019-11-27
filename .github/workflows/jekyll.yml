@@ -6,14 +6,11 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    container:
-      image: docker://ruby:latest
+
     steps:
-    - name: Build the site
+    - uses: actions/checkout@v1
+    - name: Build the site in the jekyll/builder container
       run: |
-        gem update --system
-        gem install bundler
-        bundle install --path vendor/bundle
-        bundle exec jekyll build
-        mkdir dist
-        tar -czvf dist/package-${{ github.sha }}.tar.gz -C _site .
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
