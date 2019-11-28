@@ -1,5 +1,5 @@
-- name: Dokumenty
-  link: /blog/
+- name: O projekte
+  link: /
   new_window: false
   highlight: false
 - name: O nás
@@ -10,7 +10,7 @@
   link: /contact/
   new_window: false
   highlight: false
-- name: O projekte
-  link: /
+- name: Dokumenty
+  link: /blog/
   new_window: false
   highlight: false
