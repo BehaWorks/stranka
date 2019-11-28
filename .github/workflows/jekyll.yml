@@ -26,7 +26,7 @@ jobs:
         uses: AEnterprise/rsync-deploy@v1.0
         env:
           DEPLOY_KEY: ${{ secrets.DEPLOYMENT_KEY }}
-          ARGS: "-a -e --delete"
+          ARGS: "-a -e --delete -v"
           SERVER_PORT: 22
           FOLDER: "_site"
           SERVER_IP: team12-19.studenti.fiit.stuba.sk
