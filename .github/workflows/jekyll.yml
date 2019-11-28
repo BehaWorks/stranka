@@ -28,7 +28,7 @@ jobs:
           DEPLOY_KEY: ${{ secrets.DEPLOYMENT_KEY }}
           ARGS: "-a -e --delete -v"
           SERVER_PORT: 22
-          FOLDER: "_site"
+          FOLDER: "_site/*"
           SERVER_IP: team12-19.studenti.fiit.stuba.sk
           USERNAME: bitbucket
           SERVER_DESTINATION: /var/www/html
