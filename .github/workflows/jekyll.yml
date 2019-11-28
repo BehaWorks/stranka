@@ -23,8 +23,7 @@ jobs:
           # tar -czvf dist/package-${{ github.sha }}.tar.gz -C _site .
           ls .
       - name: Deploy to web        
-        run: |
-          uses: AEnterprise/rsync-deploy@v1.0
+        uses: AEnterprise/rsync-deploy@v1.0
         env:
           DEPLOY_KEY: ${{ secrets.DEPLOYMENT_KEY }}
           ARGS: "-e -e"
