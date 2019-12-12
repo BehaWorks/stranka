@@ -1,5 +1,5 @@
 ---
-date: 2019-12-05
+date: 2019-11-28
 title: Stretnutie č. 9
 categories:
   - Sprint Wywar
