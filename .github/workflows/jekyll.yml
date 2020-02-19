@@ -1,6 +1,9 @@
 name: Jekyll site CI
 
-on: [push]
+on:
+  push:
+    branches: 
+      - master
 jobs:
   build:
     name: Build website
@@ -20,14 +23,16 @@ jobs:
           bundle install --path vendor/bundle
           bundle exec jekyll build
           mkdir dist
-          tar -czvf dist/package-${{ github.sha }}.tar.gz -C _site .
+          # tar -czvf dist/package-${{ github.sha }}.tar.gz -C _site .
           ls .
       - name: Deploy to web        
-        run: |
-          mkdir upload
-          tar -xf dist/package-${{ github.sha }}.tar.gz -C upload
-          apk update && apk add openssh rsync
-          rsync -a  -e "ssh -o StrictHostKeyChecking=no" --delete upload/ bitbucket@team12-19.studenti.fiit.stuba.sk:/var/www/html-${{ github.sha }}
-          ssh -o StrictHostKeyChecking=no bitbucket@team12-19.studenti.fiit.stuba.sk "rm -r /var/www/html"
-          ssh -o StrictHostKeyChecking=no bitbucket@team12-19.studenti.fiit.stuba.sk "mv '/var/www/html-${{ github.sha }}' '/var/www/html'"
+        uses: AEnterprise/rsync-deploy@v1.0
+        env:
+          DEPLOY_KEY: ${{ secrets.DEPLOYMENT_KEY }}
+          ARGS: "-a -e --delete -v"
+          SERVER_PORT: 22
+          FOLDER: "_site/*"
+          SERVER_IP: team12-19.studenti.fiit.stuba.sk
+          USERNAME: bitbucket
+          SERVER_DESTINATION: /var/www/html
 
