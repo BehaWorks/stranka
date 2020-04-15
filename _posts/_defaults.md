@@ -1,5 +1,5 @@
 ---
-date: 2019-MM-DD
+date: 2020-MM-DD
 title: Stretnutie č. #
 categories:
   - Sprint ???????
