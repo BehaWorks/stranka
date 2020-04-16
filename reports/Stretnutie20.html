@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html class="mozilla"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>BehaWorks</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    
+    <script>
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};window.WRM._unparsedErrors=window.WRM._unparsedErrors||{};
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"/jira\"";
+WRM._unparsedData["jira.core:feature-flags-data.feature-flag-data"]="{\"enabled-feature-keys\":[\"com.atlassian.jira.agile.darkfeature.editable.detailsview\",\"nps.survey.inline.dialog\",\"com.atlassian.jira.agile.darkfeature.edit.closed.sprint.enabled\",\"jira.plugin.devstatus.phasetwo\",\"jira.frother.reporter.field\",\"atlassian.rest.xsrf.legacy.enabled\",\"jira.issue.status.lozenge\",\"com.atlassian.jira.config.BIG_PIPE\",\"com.atlassian.jira.projects.issuenavigator\",\"com.atlassian.jira.config.PDL\",\"jira.plugin.devstatus.phasetwo.enabled\",\"atlassian.aui.raphael.disabled\",\"app-switcher.new\",\"frother.assignee.field\",\"com.atlassian.jira.projects.ProjectCentricNavigation.Switch\",\"jira.onboarding.cyoa\",\"com.atlassian.jira.agile.darkfeature.kanplan.enabled\",\"com.atlassian.jira.config.ProjectConfig.MENU\",\"com.atlassian.jira.projects.sidebar.DEFER_RESOURCES\",\"com.atlassian.jira.agile.darkfeature.kanplan.epics.and.versions.enabled\",\"com.atlassian.jira.agile.darkfeature.sprint.goal.enabled\",\"jira.zdu.admin-updates-ui\",\"jira.zdu.jmx-monitoring\",\"mail.batching.enabled\",\"sd.new.settings.sidebar.location.disabled\",\"jira.zdu.cluster-upgrade-state\",\"com.atlassian.jira.agile.darkfeature.splitissue\",\"com.atlassian.jira.config.CoreFeatures.LICENSE_ROLES_ENABLED\",\"jira.export.csv.enabled\"],\"feature-flag-states\":{\"mail.batching.override.core\":true,\"com.atlassian.jira.issues.archiving.filters\":false,\"atlassian.cdn.static.assets\":true,\"com.atlassian.jira.issuetable.draggable\":true,\"mail.batching\":false,\"sd.users.and.roles.new.page\":false,\"com.atlassian.jira.diagnostics.perflog\":true,\"com.atlassian.jira.agile.darkfeature.kanban.hide.old.done.issues\":true,\"jira.jql.suggestrecentfields\":false,\"com.atlassian.jira.agile.darkfeature.backlog.showmore\":true,\"com.atlassian.jira.gdpr.rtbf\":false,\"jira.priorities.per.project.edit.default\":false,\"com.atlassian.jira.agile.darkfeature.optimistic.transitions\":true,\"com.atlassian.jira.issuetable.move.links.hidden\":true,\"jira.renderer.consider.variable.format\":true,\"com.atlassian.jira.user.dbIdBasedKeyGenerationStrategy\":true,\"com.atlassian.jira.agile.darkfeature.kanplan\":false,\"jira.priorities.per.project.jsd\":true,\"com.atlassian.jira.issues.archiving.browse\":true,\"jira.instrumentation.laas\":false,\"com.atlassian.jira.agile.darkfeature.rapid.boards.bands\":true,\"com.atlassian.jira.sharedEntityEditRights\":true,\"jira.customfields.paginated.ui\":true,\"com.atlassian.jira.agile.darkfeature.flexible.boards\":true,\"com.atlassian.jira.agile.darkfeature.edit.closed.sprint\":false,\"jira.create.linked.issue\":true,\"mail.batching.user.notification\":true,\"com.atlassian.jira.agile.darkfeature.sprint.goal\":false,\"jira.dc.lock.leasing\":true,\"com.atlassian.jira.agile.darkfeature.dataonpageload\":true,\"mail.batching.create.section.cf\":true,\"jira.sal.host.connect.accessor.existing.transaction.will.create.transactions\":true,\"com.atlassian.jira.custom.csv.escaper\":true,\"com.atlassian.jira.plugin.issuenavigator.filtersUxImprovment\":true,\"com.atlassian.jira.agile.darkfeature.kanplan.epics.and.versions\":false,\"external.links.new.window\":true,\"jira.quick.search\":true,\"jira.jql.smartautoselectfirst\":false,\"com.atlassian.jira.projects.per.project.permission.query\":true,\"com.atlassian.jira.issues.archiving\":true,\"index.use.snappy\":true,\"jira.priorities.per.project\":true,\"com.atlassian.jira.upgrade.startup.fix.index\":true}}";
+WRM._unparsedData["jira.core:default-comment-security-level-data.DefaultCommentSecurityLevelHelpLink"]="{\"extraClasses\":\"default-comment-level-help\",\"title\":\"Commenting on an Issue\",\"url\":\"https://docs.atlassian.com/jira/jsw-docs-084/Editing+and+collaborating+on+issues#Editingandcollaboratingonissues-restrictacomment\",\"isLocal\":false}";
+WRM._unparsedData["jira.request.correlation-id"]="\"adafaaa6112ab5\"";
+WRM._unparsedData["tzdetect.pref.auto.detect"]="true";
+WRM._unparsedData["tzdetect.pref.tzid"]="\"Europe/Bratislava\"";
+WRM._unparsedData["tzdetect.pref.tzname"]="\"(GMT+01:00) Bratislava\"";
+WRM._unparsedData["tzdetect.pref.janOffset"]="3600000";
+WRM._unparsedData["tzdetect.pref.julyOffset"]="7200000";
+if(window.WRM._dataArrived)window.WRM._dataArrived();</script>
+<link type="text/css" rel="stylesheet" href="Stretnutie20_subory/batch.css" data-wrm-key="_super" data-wrm-batch-type="context" media="all">
+<link type="text/css" rel="stylesheet" href="Stretnutie20_subory/com_002.css" data-wrm-key="com.atlassian.auiplugin:split_aui.pattern.label" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="Stretnutie20_subory/com.css" data-wrm-key="com.atlassian.auiplugin:split_aui.splitchunk.16f099a0da" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="Stretnutie20_subory/jira_002.css" data-wrm-key="jira.webresources:global-static-adgs" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="Stretnutie20_subory/jira.css" data-wrm-key="jira.webresources:global-static" data-wrm-batch-type="resource" media="all">
+<script type="text/javascript" src="Stretnutie20_subory/batch.js" data-wrm-key="_super" data-wrm-batch-type="context" data-initially-rendered=""></script>
+<script type="text/javascript" src="Stretnutie20_subory/com_004.js" data-wrm-key="com.atlassian.jira.jira-tzdetect-plugin:tzdetect-banner-component" data-wrm-batch-type="resource" data-initially-rendered=""></script>
+<script type="text/javascript" src="Stretnutie20_subory/com.js" data-wrm-key="com.atlassian.jira.jira-tzdetect-plugin:tzdetect-lib" data-wrm-batch-type="resource" data-initially-rendered=""></script>
+<script type="text/javascript" src="Stretnutie20_subory/com_002.js" data-wrm-key="com.atlassian.auiplugin:split_aui.pattern.label" data-wrm-batch-type="resource" data-initially-rendered=""></script>
+<script type="text/javascript" src="Stretnutie20_subory/com_005.js" data-wrm-key="com.atlassian.auiplugin:split_aui.splitchunk.16f099a0da" data-wrm-batch-type="resource" data-initially-rendered=""></script>
+<script type="text/javascript" src="Stretnutie20_subory/com_003.js" data-wrm-key="com.atlassian.auiplugin:split_aui.pattern.table" data-wrm-batch-type="resource" data-initially-rendered=""></script>
+
+</head>
+<body id="jira" class="aui-layout aui-theme-default page-type-printable" data-aui-version="8.5.0">
+<header id="previous-view">
+    <nav class="aui-toolbar">
+        <div class="toolbar-split toolbar-split-right">
+            <ul class="toolbar-group">
+                <li class="toolbar-item">
+                    <a href="https://team12-19.studenti.fiit.stuba.sk/jira/issues/?jql=project+%3D+BEHAPASS+AND+resolution+%3D+Unresolved+AND+Sprint+%3D+12+ORDER+BY+priority+DESC%2C+updated+DESC" class="toolbar-trigger">Back to previous view</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div id="printable-content">
+<div class="result-header">
+    <h3><a href="https://team12-19.studenti.fiit.stuba.sk/jira/issues/?jql=project+%3D+BEHAPASS+AND+resolution+%3D+Unresolved+AND+Sprint+%3D+12+ORDER+BY+priority+DESC%2C+updated+DESC">BehaWorks</a></h3>
+                        
+                    
+                    
+                    
+                    
+                                        <div class="searcherValue">
+    
+            <label class="fieldLabel" for="fieldpid">Project:</label><span id="fieldpid" class="fieldValue">
+    
+                <a href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS" title="Browse BehaPass project">BehaPass</a>                    </span></div>
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                                    <div class="searcherValue">
+    
+            <label class="fieldLabel" for="fieldresolution">Resolution:</label><span id="fieldresolution" class="fieldValue">
+    
+                        Unresolved            </span></div>
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                                        <div class="searcherValue">
+    
+            <label class="fieldLabel" for="fieldcustomfield_10104">:</label><span id="fieldcustomfield_10104" class="fieldValue">
+    
+        BEH Sprint Corgoň    
+                    
+                        <div class="searcherValue">
+            <label class="fieldLabel">Sorted by:</label>
+                            Priority descending, then
+                            Updated descending
+                    </div>
+                    <div class="results-count">
+            <b>1</b>–<b>14</b> of <b>14</b>
+            as at: <b>16/Apr/20 7:47 PM</b>
+        </div>
+    </span></div>  
+
+
+
+                            <issuetable-web-component>
+                <table id="issuetable">
+                        <thead>
+        <tr class="rowHeader">
+            
+                                                            <th class="colHeaderLink headerrow-issuetype" data-id="issuetype">
+                            T
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-issuekey" data-id="issuekey">
+                            Key
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-priority" data-id="priority">
+                            P
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-status" data-id="status">
+                            Status
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10100" data-id="customfield_10100">
+                            Epic Link
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10106" data-id="customfield_10106">
+                            Story Points
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-summary" data-id="summary">
+                            Summary
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-description" data-id="description">
+                            Description
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-updated" data-id="updated">
+                            Updated
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-created" data-id="created">
+                            Created
+                                                    </th>
+                                                                    </tr>
+    </thead>
+    <tbody>
+                    
+
+                <tr id="issuerow10504" rel="10504" data-issuekey="BEHAPASS-212" class="issuerow">
+                                            <td class="issuetype">    <a class="issue-link" data-issue-key="BEHAPASS-212" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-212">
+            <img src="Stretnutie20_subory/viewavatar_002.svg" alt="Internal" title="Internal - " width="16" height="16" border="0" align="absmiddle">
+        </a>
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="BEHAPASS-212" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-212">BEHAPASS-212</a>
+</td>
+                                            <td class="priority">            <img src="Stretnutie20_subory/medium.svg" alt="Medium" title="Medium - Has the potential to affect progress." width="16" height="16" border="0" align="absmiddle">
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;" original-title="">To Do</span>    </td>
+                                            <td class="customfield_10100"></td>
+                                            <td class="customfield_10106">    5
+</td>
+                                            <td class="summary"><p>
+                <a class="issue-link" data-issue-key="BEHAPASS-212" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-212">Interne</a>
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="updated"> <span title="16/Apr/20 2:24 PM"><time datetime="2020-04-16T14:24:50+0200">16/Apr/20</time></span> </td>
+                                            <td class="created"> <span title="16/Apr/20 2:11 PM"><time datetime="2020-04-16T14:11:22+0200">16/Apr/20</time></span> </td>
+                    </tr>
+
+
+                <tr id="issuerow10514" rel="10514" data-issuekey="BEHAPASS-222" class="issuerow">
+                                            <td class="issuetype">    <a class="issue-link" data-issue-key="BEHAPASS-222" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-222">
+            <img src="Stretnutie20_subory/viewavatar.svg" alt="Sub-task" title="Sub-task - The sub-task of the issue" width="16" height="16" border="0" align="absmiddle">
+        </a>
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="BEHAPASS-222" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-222">BEHAPASS-222</a>
+</td>
+                                            <td class="priority">            <img src="Stretnutie20_subory/medium.svg" alt="Medium" title="Medium - Has the potential to affect progress." width="16" height="16" border="0" align="absmiddle">
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;" original-title="">To Do</span>    </td>
+                                            <td class="customfield_10100"></td>
+                                            <td class="customfield_10106"></td>
+                                            <td class="summary"><p>
+                        <a class="issue-link parentIssue" data-issue-key="BEHAPASS-212" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-212" title="Interne">BEHAPASS-212</a>
+                        <a class="issue-link" data-issue-key="BEHAPASS-222" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-222">Revízia - Hlavná časť stránky</a>
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="updated"> <span title="16/Apr/20 2:23 PM"><time datetime="2020-04-16T14:23:08+0200">16/Apr/20</time></span> </td>
+                                            <td class="created"> <span title="16/Apr/20 2:23 PM"><time datetime="2020-04-16T14:23:08+0200">16/Apr/20</time></span> </td>
+                    </tr>
+
+
+                <tr id="issuerow10513" rel="10513" data-issuekey="BEHAPASS-221" class="issuerow">
+                                            <td class="issuetype">    <a class="issue-link" data-issue-key="BEHAPASS-221" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-221">
+            <img src="Stretnutie20_subory/viewavatar.svg" alt="Sub-task" title="Sub-task - The sub-task of the issue" width="16" height="16" border="0" align="absmiddle">
+        </a>
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="BEHAPASS-221" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-221">BEHAPASS-221</a>
+</td>
+                                            <td class="priority">            <img src="Stretnutie20_subory/medium.svg" alt="Medium" title="Medium - Has the potential to affect progress." width="16" height="16" border="0" align="absmiddle">
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;" original-title="">To Do</span>    </td>
+                                            <td class="customfield_10100"></td>
+                                            <td class="customfield_10106"></td>
+                                            <td class="summary"><p>
+                        <a class="issue-link parentIssue" data-issue-key="BEHAPASS-212" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-212" title="Interne">BEHAPASS-212</a>
+                        <a class="issue-link" data-issue-key="BEHAPASS-221" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-221">Revízia - Hlavná časť stránky</a>
+    </p>
+</td>
+                                            <td class="description">      <p>Pridať opis - s čím pracujeme, obrazovky (všeobecné predstavenie nášho produktu)</p>
+  </td>
+                                            <td class="updated"> <span title="16/Apr/20 2:22 PM"><time datetime="2020-04-16T14:22:58+0200">16/Apr/20</time></span> </td>
+                                            <td class="created"> <span title="16/Apr/20 2:22 PM"><time datetime="2020-04-16T14:22:58+0200">16/Apr/20</time></span> </td>
+                    </tr>
+
+
+                <tr id="issuerow10510" rel="10510" data-issuekey="BEHAPASS-218" class="issuerow">
+                                            <td class="issuetype">    <a class="issue-link" data-issue-key="BEHAPASS-218" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-218">
+            <img src="Stretnutie20_subory/viewavatar.svg" alt="Sub-task" title="Sub-task - The sub-task of the issue" width="16" height="16" border="0" align="absmiddle">
+        </a>
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="BEHAPASS-218" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-218">BEHAPASS-218</a>
+</td>
+                                            <td class="priority">            <img src="Stretnutie20_subory/medium.svg" alt="Medium" title="Medium - Has the potential to affect progress." width="16" height="16" border="0" align="absmiddle">
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;" original-title="">To Do</span>    </td>
+                                            <td class="customfield_10100"></td>
+                                            <td class="customfield_10106"></td>
+                                            <td class="summary"><p>
+                        <a class="issue-link parentIssue" data-issue-key="BEHAPASS-212" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-212" title="Interne">BEHAPASS-212</a>
+                        <a class="issue-link" data-issue-key="BEHAPASS-218" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-218">Revízia - Sumarizácie šprintov</a>
+    </p>
+</td>
+                                            <td class="description">      <p>Po šprint Jama</p>
+  </td>
+                                            <td class="updated"> <span title="16/Apr/20 2:17 PM"><time datetime="2020-04-16T14:17:04+0200">16/Apr/20</time></span> </td>
+                                            <td class="created"> <span title="16/Apr/20 2:15 PM"><time datetime="2020-04-16T14:15:17+0200">16/Apr/20</time></span> </td>
+                    </tr>
+
+
+                <tr id="issuerow10509" rel="10509" data-issuekey="BEHAPASS-217" class="issuerow">
+                                            <td class="issuetype">    <a class="issue-link" data-issue-key="BEHAPASS-217" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-217">
+            <img src="Stretnutie20_subory/viewavatar.svg" alt="Sub-task" title="Sub-task - The sub-task of the issue" width="16" height="16" border="0" align="absmiddle">
+        </a>
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="BEHAPASS-217" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-217">BEHAPASS-217</a>
+</td>
+                                            <td class="priority">            <img src="Stretnutie20_subory/medium.svg" alt="Medium" title="Medium - Has the potential to affect progress." width="16" height="16" border="0" align="absmiddle">
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;" original-title="">To Do</span>    </td>
+                                            <td class="customfield_10100"></td>
+                                            <td class="customfield_10106"></td>
+                                            <td class="summary"><p>
+                        <a class="issue-link parentIssue" data-issue-key="BEHAPASS-212" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-212" title="Interne">BEHAPASS-212</a>
+                        <a class="issue-link" data-issue-key="BEHAPASS-217" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-217">Revízia - Sumarizácie šprintov</a>
+    </p>
+</td>
+                                            <td class="description">      <p>Po šprint Jama</p>
+  </td>
+                                            <td class="updated"> <span title="16/Apr/20 2:16 PM"><time datetime="2020-04-16T14:16:49+0200">16/Apr/20</time></span> </td>
+                                            <td class="created"> <span title="16/Apr/20 2:15 PM"><time datetime="2020-04-16T14:15:05+0200">16/Apr/20</time></span> </td>
+                    </tr>
+
+
+                <tr id="issuerow10512" rel="10512" data-issuekey="BEHAPASS-220" class="issuerow">
+                                            <td class="issuetype">    <a class="issue-link" data-issue-key="BEHAPASS-220" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-220">
+            <img src="Stretnutie20_subory/viewavatar.svg" alt="Sub-task" title="Sub-task - The sub-task of the issue" width="16" height="16" border="0" align="absmiddle">
+        </a>
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="BEHAPASS-220" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-220">BEHAPASS-220</a>
+</td>
+                                            <td class="priority">            <img src="Stretnutie20_subory/medium.svg" alt="Medium" title="Medium - Has the potential to affect progress." width="16" height="16" border="0" align="absmiddle">
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;" original-title="">To Do</span>    </td>
+                                            <td class="customfield_10100"></td>
+                                            <td class="customfield_10106"></td>
+                                            <td class="summary"><p>
+                        <a class="issue-link parentIssue" data-issue-key="BEHAPASS-212" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-212" title="Interne">BEHAPASS-212</a>
+                        <a class="issue-link" data-issue-key="BEHAPASS-220" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-220">Report 21</a>
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="updated"> <span title="16/Apr/20 2:15 PM"><time datetime="2020-04-16T14:15:40+0200">16/Apr/20</time></span> </td>
+                                            <td class="created"> <span title="16/Apr/20 2:15 PM"><time datetime="2020-04-16T14:15:40+0200">16/Apr/20</time></span> </td>
+                    </tr>
+
+
+                <tr id="issuerow10511" rel="10511" data-issuekey="BEHAPASS-219" class="issuerow">
+                                            <td class="issuetype">    <a class="issue-link" data-issue-key="BEHAPASS-219" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-219">
+            <img src="Stretnutie20_subory/viewavatar.svg" alt="Sub-task" title="Sub-task - The sub-task of the issue" width="16" height="16" border="0" align="absmiddle">
+        </a>
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="BEHAPASS-219" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-219">BEHAPASS-219</a>
+</td>
+                                            <td class="priority">            <img src="Stretnutie20_subory/medium.svg" alt="Medium" title="Medium - Has the potential to affect progress." width="16" height="16" border="0" align="absmiddle">
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;" original-title="">To Do</span>    </td>
+                                            <td class="customfield_10100"></td>
+                                            <td class="customfield_10106"></td>
+                                            <td class="summary"><p>
+                        <a class="issue-link parentIssue" data-issue-key="BEHAPASS-212" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-212" title="Interne">BEHAPASS-212</a>
+                        <a class="issue-link" data-issue-key="BEHAPASS-219" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-219">Report 20</a>
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="updated"> <span title="16/Apr/20 2:15 PM"><time datetime="2020-04-16T14:15:33+0200">16/Apr/20</time></span> </td>
+                                            <td class="created"> <span title="16/Apr/20 2:15 PM"><time datetime="2020-04-16T14:15:33+0200">16/Apr/20</time></span> </td>
+                    </tr>
+
+
+                <tr id="issuerow10508" rel="10508" data-issuekey="BEHAPASS-216" class="issuerow">
+                                            <td class="issuetype">    <a class="issue-link" data-issue-key="BEHAPASS-216" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-216">
+            <img src="Stretnutie20_subory/viewavatar.svg" alt="Sub-task" title="Sub-task - The sub-task of the issue" width="16" height="16" border="0" align="absmiddle">
+        </a>
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="BEHAPASS-216" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-216">BEHAPASS-216</a>
+</td>
+                                            <td class="priority">            <img src="Stretnutie20_subory/medium.svg" alt="Medium" title="Medium - Has the potential to affect progress." width="16" height="16" border="0" align="absmiddle">
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;" original-title="">To Do</span>    </td>
+                                            <td class="customfield_10100"></td>
+                                            <td class="customfield_10106"></td>
+                                            <td class="summary"><p>
+                        <a class="issue-link parentIssue" data-issue-key="BEHAPASS-212" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-212" title="Interne">BEHAPASS-212</a>
+                        <a class="issue-link" data-issue-key="BEHAPASS-216" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-216">Revízia - Aplikácie manažmentov</a>
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="updated"> <span title="16/Apr/20 2:14 PM"><time datetime="2020-04-16T14:14:47+0200">16/Apr/20</time></span> </td>
+                                            <td class="created"> <span title="16/Apr/20 2:14 PM"><time datetime="2020-04-16T14:14:47+0200">16/Apr/20</time></span> </td>
+                    </tr>
+
+
+                <tr id="issuerow10507" rel="10507" data-issuekey="BEHAPASS-215" class="issuerow">
+                                            <td class="issuetype">    <a class="issue-link" data-issue-key="BEHAPASS-215" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-215">
+            <img src="Stretnutie20_subory/viewavatar.svg" alt="Sub-task" title="Sub-task - The sub-task of the issue" width="16" height="16" border="0" align="absmiddle">
+        </a>
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="BEHAPASS-215" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-215">BEHAPASS-215</a>
+</td>
+                                            <td class="priority">            <img src="Stretnutie20_subory/medium.svg" alt="Medium" title="Medium - Has the potential to affect progress." width="16" height="16" border="0" align="absmiddle">
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;" original-title="">To Do</span>    </td>
+                                            <td class="customfield_10100"></td>
+                                            <td class="customfield_10106"></td>
+                                            <td class="summary"><p>
+                        <a class="issue-link parentIssue" data-issue-key="BEHAPASS-212" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-212" title="Interne">BEHAPASS-212</a>
+                        <a class="issue-link" data-issue-key="BEHAPASS-215" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-215">Revízia - Aplikácie manažmentov</a>
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="updated"> <span title="16/Apr/20 2:14 PM"><time datetime="2020-04-16T14:14:38+0200">16/Apr/20</time></span> </td>
+                                            <td class="created"> <span title="16/Apr/20 2:14 PM"><time datetime="2020-04-16T14:14:38+0200">16/Apr/20</time></span> </td>
+                    </tr>
+
+
+                <tr id="issuerow10506" rel="10506" data-issuekey="BEHAPASS-214" class="issuerow">
+                                            <td class="issuetype">    <a class="issue-link" data-issue-key="BEHAPASS-214" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-214">
+            <img src="Stretnutie20_subory/viewavatar.svg" alt="Sub-task" title="Sub-task - The sub-task of the issue" width="16" height="16" border="0" align="absmiddle">
+        </a>
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="BEHAPASS-214" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-214">BEHAPASS-214</a>
+</td>
+                                            <td class="priority">            <img src="Stretnutie20_subory/medium.svg" alt="Medium" title="Medium - Has the potential to affect progress." width="16" height="16" border="0" align="absmiddle">
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;" original-title="">To Do</span>    </td>
+                                            <td class="customfield_10100"></td>
+                                            <td class="customfield_10106"></td>
+                                            <td class="summary"><p>
+                        <a class="issue-link parentIssue" data-issue-key="BEHAPASS-212" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-212" title="Interne">BEHAPASS-212</a>
+                        <a class="issue-link" data-issue-key="BEHAPASS-214" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-214">Revízia - Role členov tímu a podiel práce</a>
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="updated"> <span title="16/Apr/20 2:14 PM"><time datetime="2020-04-16T14:14:17+0200">16/Apr/20</time></span> </td>
+                                            <td class="created"> <span title="16/Apr/20 2:14 PM"><time datetime="2020-04-16T14:14:17+0200">16/Apr/20</time></span> </td>
+                    </tr>
+
+
+                <tr id="issuerow10505" rel="10505" data-issuekey="BEHAPASS-213" class="issuerow">
+                                            <td class="issuetype">    <a class="issue-link" data-issue-key="BEHAPASS-213" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-213">
+            <img src="Stretnutie20_subory/viewavatar.svg" alt="Sub-task" title="Sub-task - The sub-task of the issue" width="16" height="16" border="0" align="absmiddle">
+        </a>
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="BEHAPASS-213" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-213">BEHAPASS-213</a>
+</td>
+                                            <td class="priority">            <img src="Stretnutie20_subory/medium.svg" alt="Medium" title="Medium - Has the potential to affect progress." width="16" height="16" border="0" align="absmiddle">
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;" original-title="">To Do</span>    </td>
+                                            <td class="customfield_10100"></td>
+                                            <td class="customfield_10106"></td>
+                                            <td class="summary"><p>
+                        <a class="issue-link parentIssue" data-issue-key="BEHAPASS-212" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-212" title="Interne">BEHAPASS-212</a>
+                        <a class="issue-link" data-issue-key="BEHAPASS-213" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-213">Revízia - Role členov tímu a podiel práce</a>
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="updated"> <span title="16/Apr/20 2:14 PM"><time datetime="2020-04-16T14:14:05+0200">16/Apr/20</time></span> </td>
+                                            <td class="created"> <span title="16/Apr/20 2:14 PM"><time datetime="2020-04-16T14:14:05+0200">16/Apr/20</time></span> </td>
+                    </tr>
+
+
+                <tr id="issuerow10503" rel="10503" data-issuekey="BEHAPASS-211" class="issuerow">
+                                            <td class="issuetype">    <a class="issue-link" data-issue-key="BEHAPASS-211" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-211">
+            <img src="Stretnutie20_subory/story.svg" alt="Story" title="Story - Created by Jira Software - do not edit or delete. Issue type for a user story." width="16" height="16" border="0" align="absmiddle">
+        </a>
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="BEHAPASS-211" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-211">BEHAPASS-211</a>
+</td>
+                                            <td class="priority">            <img src="Stretnutie20_subory/medium.svg" alt="Medium" title="Medium - Has the potential to affect progress." width="16" height="16" border="0" align="absmiddle">
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;" original-title="">To Do</span>    </td>
+                                            <td class="customfield_10100"></td>
+                                            <td class="customfield_10106">    5
+</td>
+                                            <td class="summary"><p>
+                <a class="issue-link" data-issue-key="BEHAPASS-211" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-211">Ako výskumník chcem vylepšiť validáciu modelu používateľa, aby sme získali relevantnejšie výsledky identifikácie</a>
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="updated"> <span title="16/Apr/20 2:05 PM"><time datetime="2020-04-16T14:05:13+0200">16/Apr/20</time></span> </td>
+                                            <td class="created"> <span title="16/Apr/20 2:02 PM"><time datetime="2020-04-16T14:02:44+0200">16/Apr/20</time></span> </td>
+                    </tr>
+
+
+                <tr id="issuerow10501" rel="10501" data-issuekey="BEHAPASS-209" class="issuerow">
+                                            <td class="issuetype">    <a class="issue-link" data-issue-key="BEHAPASS-209" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-209">
+            <img src="Stretnutie20_subory/viewavatar_002.svg" alt="Internal" title="Internal - " width="16" height="16" border="0" align="absmiddle">
+        </a>
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="BEHAPASS-209" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-209">BEHAPASS-209</a>
+</td>
+                                            <td class="priority">            <img src="Stretnutie20_subory/medium.svg" alt="Medium" title="Medium - Has the potential to affect progress." width="16" height="16" border="0" align="absmiddle">
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;" original-title="">To Do</span>    </td>
+                                            <td class="customfield_10100"></td>
+                                            <td class="customfield_10106">    5
+</td>
+                                            <td class="summary"><p>
+                <a class="issue-link" data-issue-key="BEHAPASS-209" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-209">Príprava prvotných user testov</a>
+    </p>
+</td>
+                                            <td class="description">      <p>Otestovat cca 15 ludi</p>
+  </td>
+                                            <td class="updated"> <span title="16/Apr/20 1:47 PM"><time datetime="2020-04-16T13:47:54+0200">16/Apr/20</time></span> </td>
+                                            <td class="created"> <span title="16/Apr/20 1:11 PM"><time datetime="2020-04-16T13:11:06+0200">16/Apr/20</time></span> </td>
+                    </tr>
+
+
+                <tr id="issuerow10502" rel="10502" data-issuekey="BEHAPASS-210" class="issuerow">
+                                            <td class="issuetype">    <a class="issue-link" data-issue-key="BEHAPASS-210" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-210">
+            <img src="Stretnutie20_subory/story.svg" alt="Story" title="Story - Created by Jira Software - do not edit or delete. Issue type for a user story." width="16" height="16" border="0" align="absmiddle">
+        </a>
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="BEHAPASS-210" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-210">BEHAPASS-210</a>
+</td>
+                                            <td class="priority">            <img src="Stretnutie20_subory/medium.svg" alt="Medium" title="Medium - Has the potential to affect progress." width="16" height="16" border="0" align="absmiddle">
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;" original-title="">To Do</span>    </td>
+                                            <td class="customfield_10100">
+            <a class="aui-label ghx-label-4" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-150">
+            Klientska aplikácia
+        </a>
+    </td>
+                                            <td class="customfield_10106">    8
+</td>
+                                            <td class="summary"><p>
+                <a class="issue-link" data-issue-key="BEHAPASS-210" href="https://team12-19.studenti.fiit.stuba.sk/jira/browse/BEHAPASS-210">Ako výskumník chcem simulovať pohyb ovládača , aby som v klientskej aplikácii mohol simulovať proces identifikácie bez ovládačov</a>
+    </p>
+</td>
+                                            <td class="description">      <p>Chceme z DB vykresliť už načítaný pohyb a vyhodnotí ho</p>
+  </td>
+                                            <td class="updated"> <span title="16/Apr/20 1:46 PM"><time datetime="2020-04-16T13:46:15+0200">16/Apr/20</time></span> </td>
+                                            <td class="created"> <span title="16/Apr/20 1:15 PM"><time datetime="2020-04-16T13:15:44+0200">16/Apr/20</time></span> </td>
+                    </tr>
+                </tbody>
+    </table>
+    </issuetable-web-component>
+    <div class="end-of-stable-message"></div>
+            </div>
+<script>
+require(["jquery"], function ($) {
+    // Prevent click events from doing stuff in this view
+    $(function(){
+        $('#printable-content *').unbind('click').click(function(e){ e.preventDefault() }).removeAttr('onclick');
+    });
+});
+</script>
+
+
+</div></body></html>
