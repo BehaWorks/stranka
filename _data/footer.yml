@@ -41,6 +41,6 @@
     - name: Jira
       link: https://team12-19.studenti.fiit.stuba.sk/jira/
       new_window: true
-    - name: Bitbucket
-      link: https://bitbucket.org/behaworks/
+    - name: Github
+      link: https://github.com/BehaWorks
       new_window: true
