@@ -46,4 +46,4 @@ author_staff_member: Adriana
 
 ![Review šprintu]({{ site.baseurl }}/images/Review_3.png)
 
-[Report 8]({{ site.baseurl }}/reports/Stretnutie8.html)
+[Export 8]({{ site.baseurl }}/reports/Stretnutie8.html)

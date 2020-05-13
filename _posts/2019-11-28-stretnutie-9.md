@@ -39,4 +39,4 @@ Počas týždňa sme pracovali na :
         - k-NN pojdeme robit cez elastic search ?? (bez dohody)
 
 
-[Report 9]({{ site.baseurl }}/reports/Stretnutie9.html)
+[Export 9]({{ site.baseurl }}/reports/Stretnutie9.html)
