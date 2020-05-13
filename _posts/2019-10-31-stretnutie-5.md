@@ -21,4 +21,4 @@ author_staff_member: Adriana
 - Dokumentovanie - loggera a scrum metodiky
 - Diskusia a naštudovanie si problematiky k vizualizácii dát
 
-[Report 5]({{ site.baseurl }}/reports/Stretnutie5.html)
+[Export 5]({{ site.baseurl }}/reports/Stretnutie5.html)

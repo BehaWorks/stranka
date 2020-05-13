@@ -22,4 +22,4 @@ author_staff_member: Adriana
 - Planning Poker
 - Individuálna práca na pridelených úlohách
 
-[Report 3]({{ site.baseurl }}/reports/Stretnutie3.html)
+[Export 3]({{ site.baseurl }}/reports/Stretnutie3.html)

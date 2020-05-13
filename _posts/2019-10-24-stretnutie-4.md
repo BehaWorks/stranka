@@ -23,4 +23,4 @@ author_staff_member: Adriana
      - Diskusia START/STOP/CONTINUE
 
 
-[Report 4]({{ site.baseurl }}/reports/Stretnutie4.html)
+[Export 4]({{ site.baseurl }}/reports/Stretnutie4.html)

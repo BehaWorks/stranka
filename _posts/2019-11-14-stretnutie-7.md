@@ -29,4 +29,4 @@ author_staff_member: Adriana
     - intreface pre počítanie metrík a ich vizualizáciu
     - vytovorení automatických testov 
     
-[Report 7]({{ site.baseurl }}/reports/Stretnutie7.html)
+[Export 7]({{ site.baseurl }}/reports/Stretnutie7.html)

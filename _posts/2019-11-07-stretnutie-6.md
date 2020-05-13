@@ -23,4 +23,4 @@ author_staff_member: Adriana
 - Planning Poker
 - Diskusia o rozdelení na tasky/sub-tasky
 
-[Report 6]({{ site.baseurl }}/reports/Stretnutie6.html)
+[Export 6]({{ site.baseurl }}/reports/Stretnutie6.html)
